@@ -1,0 +1,1 @@
+This is a news app built with React. It displays the top stories from the NYTimes for the selected categories shown on the top menu. The story links are currently not operational. If the page does not retrieve articles, it may be because the HTTP requests to the NYTimes feed have reached their daily limit, or there were no articles available for the selected category in the feed.
