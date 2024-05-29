@@ -120,10 +120,6 @@ nav a:not(.active):hover {
   color: #000;
 }
 
-img {
-  width: 100%;
-}
-
 li.logo {
   overflow: hidden;
 }
@@ -135,15 +131,22 @@ li.logo img {
 
 .entry {
   display: grid;
-  grid-template-columns: 3fr 5fr;
+  grid-template-columns: 150px 1fr;
   grid-column-gap: 1rem;
   margin-bottom: 1rem;
   grid-area: 'entry';
 }
+img {
+  width: 100%;
+}
 
 @media (max-width: 640px) {
   .entry {
+    grid-template-columns: none;
     display: block;
+  }
+  .entry img {
+    width: 150px;
   }
 }
 
@@ -178,14 +181,6 @@ li.logo img {
   justify-content: center;
   align-items: center;
 }
-
-/* .loading div {
-  width: 90px;
-  height: 90px;
-  overflow: hidden;
-  background: url('../img/spinner.svg') 50% 50% no-repeat;
-  background-size: cover;
-} */
 
 .page-note {
   text-align: center;

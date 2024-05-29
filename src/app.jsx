@@ -121,9 +121,9 @@ export function App() {
         were no articles available for the selected category in the feed.
       </p>
       <p className="page-note">
-        The NYTimes allows 500 requests per day and 5 requests per minute. We
-        should sleep 12 seconds between calls to avoid hitting the per minute
-        rate limit.
+        The NYTimes allows 500 requests per day and <b>5 requests per minute</b>
+        . We should sleep <b>12 seconds between calls</b> to avoid hitting the
+        per minute rate limit.
       </p>
       <Stories stories={stories} section={section} />
     </>
